@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contato.css">
+    <title>Barbearia Alura</title>
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <h1>
+                <img src="./imgs/Produtos/logo.png" alt="">
+            </h1>
+            <nav>
+                <ul>
+                    <li class="items">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="items">
+                        <a href="./produtos.html">Produtos</a>
+                    </li>
+                    <li class="items">
+                        <a href="./contato.html">Contatos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="nome-completo">Nome completo</label>
+            <input type="text" id="nome-completo" class="input-padrao" required>
+
+            <label for="Email">E-mail</label>
+            <input type="email" id="Email" class="input-padrao" required placeholder="Exemplo: nome@dominio.com">
+
+            <label for="Telefone">Telefone</label>
+            <input type="tel" id="Telefone" class="input-padrao" required placeholder="(11) 00000-0000">
+
+            <label for="mensagem">Mensagem
+                <textarea name="Mensagem" id="mensagem" cols="30" rows="10" class="input-padrao" required></textarea>
+            </label>
+
+            <fieldset>
+
+                <legend>Qual o melhor formato de contato?</legend>
+
+                <label for="Nome">
+                    <input type="radio" name="radio" id="Nome">Nome
+                </label>
+
+                <label for="email">
+                    <input type="radio" name="radio" id="email">E-mail
+                </label>
+
+                <label for="telefone">
+                    <input type="radio" name="radio" id="telefone" checked>Telefone
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário tem disponibilidade para trabalhar?</legend>
+                <select name="Horarios" id="horario">
+                    <option value="Horário">Manhã</option>
+                    <option value="Horário">Tarde</option>
+                    <option value="Horário">Noite</option>
+                </select>
+            </fieldset>
+
+            <label for="check">
+                <input type="checkbox" name="check" id="check" class="checkbox" checked> Você gostaria de receber
+                contato pelo WhatsApp?
+            </label>
+
+            <input type="submit" value="Enviar" class="enviar">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horários</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Terça</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Quinta</td>
+                    <td>8h - 20h</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Barbearia Alura</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer>
+        <img src="./imgs/Produtos/logo-branco.png" alt="">
+        <p> &copy; Copyright Barbearia Alura</p>
+    </footer>
+</body>
+
+</html>
